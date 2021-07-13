@@ -6,19 +6,13 @@
 
 
 <script>
-
 export default {
 name: "Osya",
-
 data(){
-  return{
-      
-     }
- 
-},
+  return{  }
+ },
 methods: {
-  
-}
+ }
 
 }
 </script>

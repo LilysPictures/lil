@@ -2,8 +2,7 @@
 
 <v-btn
     @click="clickBtn"
-  
-  />
+    />
 <transition name="fade">
   <div class="BG" v-if='showImage'> </div>
 </transition>
@@ -49,19 +48,4 @@ methods: {
   position: absolute;
   z-index: 10000;
 }
-
-.v-btn {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  float: right;
-  cursor: pointer;
-  z-index: 11000;
-  position: absolute; */
-}
-
 </style>

@@ -1,14 +1,11 @@
 <template>
-
 <div id="app">
   <!-- <router-link :to="{name: 'About'}"> About </router-link>  -->
- 
   <app-header/>
   <spider/>
   <router-link :to="{name: 'Osya'}"> <img src='./assets/Osya.png' style="width: 200px; height: 180px; margin-left: 10vw; margin-top: 20vh"/> </router-link> 
   <router-view/>
   <ghost/>
-    
   <app-footer/>
 </div>
 </template>
@@ -20,7 +17,7 @@ import spider from '@/components/spider'
 import ghost from '@/components/ghost'
 
 export default {
-   name: "App",
+ name: "App",
 
 components: {AppHeader, AppFooter, spider, ghost}
 
