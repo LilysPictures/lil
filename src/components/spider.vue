@@ -1,13 +1,13 @@
 <template>
 
-<img @click="show = !show" src="../assets/left_web.png" style="width: 200px; height: 180px">
+<img @click="show = !show" src="../assets/left_web.png" style="width: 200px; height: 180px; position: absolute; z-index: 12000">
 
 <transition
    name="custom-classes-transition"
     enter-active-class="animated tada"
     leave-active-class="animated bounceOutRight"
   >
-  <img src="../assets/spider.png" style="width: 200px; height: 180px" v-if="show">    
+  <img src="../assets/spider.png" style="width: 200px; height: 180px; position: absolute; z-index: 11000" v-if="show">    
    </transition> 
 
   

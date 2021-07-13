@@ -33,6 +33,7 @@
   </transition>  -->
 
   <spider/>
+  <router-link :to="{name: 'Osya'}"> <img src='./assets/Osya.png' style="width: 200px; height: 180px; margin-left: 10vw; margin-top: 20vh"/> </router-link> 
   <router-view/>
   <ghost/>
     
@@ -48,31 +49,10 @@ import ghost from '@/components/ghost'
 
 export default {
    name: "App",
- 
-// data(){
-//   return{
-     
-//       // show: true
-//      }
- 
-// },
 
 components: {AppHeader, AppFooter, spider, ghost}
 
-
-// methods: {
-//   clickBtn: function () {
-//             this.showImage = !this.showImage;
-//         },
-
-    // clickBtn(){
-      
-    //   console.log("Эта кнопка кликнулась")
-    // }
-    
-    // }
-  }
-
+}
 </script>
 
 <style>

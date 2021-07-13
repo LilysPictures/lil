@@ -21,7 +21,13 @@ const routes = [
         layout: 'AppLayoutAbout'
       }
   },
-
+  {
+    path: "/osya",
+    name: "Osya",
+      component: () =>
+      import("../views/Osya.vue"),
+     
+  },
 
 ];
 

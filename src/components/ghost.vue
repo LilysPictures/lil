@@ -9,37 +9,18 @@
 
 
 <script>
+
 export default {
   name: "ghost",
-  
-
 data(){
-
-
-    return{
-   
-    }
-    
+    return{ }
 },
-computed: {
-
-},
-
-methods: {
- play: function() {
-  requestAnimationFrame(function() {
-    $el.addClass('animate');
-    el.style.transform = '';
-  });
-  console.log('Play: adds the transition class and removes the transform.');
+computed: {},
+methods: {}
 }
 
-}
-}
 </script>
 
 
 <style lang="scss">
-
-
 </style>
