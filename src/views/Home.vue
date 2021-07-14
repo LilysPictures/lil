@@ -8,16 +8,18 @@
 </transition>
 
 <router-link :to="{name: 'Osya'}"> <img src='@/assets/Osya.png' style="width: 200px; height: 180px; margin-left: 10vw; margin-top: 20vh; position: absolute"/> </router-link> 
-
+<spider/>
+<ghost/>
 </template>
 
 <script>
 import vBtn from '@/components/v-btn'
-
+import spider from '@/components/spider'
+import ghost from '@/components/ghost'
 
 export default {
 name: "Home",
-components: { vBtn },
+components: { vBtn, spider, ghost },
 data(){
   return{
       showImage: false,  
