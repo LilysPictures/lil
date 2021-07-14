@@ -3,7 +3,7 @@
   <!-- <router-link :to="{name: 'About'}"> About </router-link>  -->
   <app-header/>
   <spider/>
-  <router-link :to="{name: 'Osya'}"> <img src='./assets/Osya.png' style="width: 200px; height: 180px; margin-left: 10vw; margin-top: 20vh; position: absolute"/> </router-link> 
+  <!-- <router-link :to="{name: 'Osya'}"> <img src='./assets/Osya.png' style="width: 200px; height: 180px; margin-left: 10vw; margin-top: 20vh; position: absolute"/> </router-link>  -->
   <router-view/>
   <ghost/>
   <app-footer/>

@@ -6,10 +6,14 @@
 <transition name="fade">
   <div class="BG" v-if='showImage'> </div>
 </transition>
+
+<router-link :to="{name: 'Osya'}"> <img src='@/assets/Osya.png' style="width: 200px; height: 180px; margin-left: 10vw; margin-top: 20vh; position: absolute"/> </router-link> 
+
 </template>
 
 <script>
 import vBtn from '@/components/v-btn'
+
 
 export default {
 name: "Home",

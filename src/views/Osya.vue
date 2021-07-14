@@ -1,6 +1,6 @@
 <template>
   <div class="osya">
-  <!-- <img src='../assets/01.jpg' /> -->
+  <img src='../assets/01.jpg' />
      </div>
 </template>
 
