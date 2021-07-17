@@ -1,54 +1,61 @@
 <template>
+  <v-btn @click="clickBtn" />
+  <transition name="fade">
+    <div class="BG" v-if="showImage"></div>
+  </transition>
 
-<v-btn
-    @click="clickBtn"
+  <router-link :to="{ name: 'Osya' }">
+    <img
+      src="@/assets/Osya.png"
+      style="
+        width: 200px;
+        height: 180px;
+        margin-left: 10vw;
+        margin-top: 20vh;
+        position: absolute;
+      "
     />
-<transition name="fade">
-  <div class="BG" v-if='showImage'> </div>
-</transition>
-
-<router-link :to="{name: 'Osya'}"> <img src='@/assets/Osya.png' style="width: 200px; height: 180px; margin-left: 10vw; margin-top: 20vh; position: absolute"/> </router-link> 
-<spider/>
-<ghost/>
+  </router-link>
+  <spider />
+  <ghost />
 </template>
 
 <script>
-import vBtn from '@/components/v-btn'
-import spider from '@/components/spider'
-import ghost from '@/components/ghost'
+import vBtn from "@/components/v-btn";
+import spider from "@/components/spider";
+import ghost from "@/components/ghost";
 
 export default {
-name: "Home",
-components: { vBtn, spider, ghost },
-data(){
-  return{
-      showImage: false,  
+  name: "Home",
+  components: { vBtn, spider, ghost },
+  data() {
+    return {
+      showImage: false,
       show: true,
-     }
-},
-methods: {
-  clickBtn: function () {
-            this.showImage = !this.showImage;
-        },
-}
-
-}
+    };
+  },
+  methods: {
+    clickBtn: function () {
+      this.showImage = !this.showImage;
+    },
+  },
+};
 </script>
 
-
 <style>
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 .BG {
-  font-family: 'Frijole', cursive;
+  font-family: "Frijole", cursive;
   width: 100vw;
   height: 91vh;
-  margin: 0; 
+  margin: 0;
   background: url(../assets/BG_MM_InversGraff.jpg) center no-repeat fixed;
   background-size: cover;
   position: absolute;

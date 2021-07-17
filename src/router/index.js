@@ -1,7 +1,5 @@
-
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
-
 
 const routes = [
   {
@@ -9,26 +7,22 @@ const routes = [
     name: "Home",
     component: Home,
     meta: {
-      layout: 'AppLayoutHome'
-    }
+      layout: "AppLayoutHome",
+    },
   },
   {
     path: "/about",
     name: "About",
-      component: () =>
-      import("../views/About.vue"),
-      meta: {
-        layout: 'AppLayoutAbout'
-      }
+    component: () => import("../views/About.vue"),
+    meta: {
+      layout: "AppLayoutAbout",
+    },
   },
   {
     path: "/osya",
     name: "Osya",
-      component: () =>
-      import("../views/Osya.vue"),
-     
+    component: () => import("../views/Osya.vue"),
   },
-
 ];
 
 const router = createRouter({
