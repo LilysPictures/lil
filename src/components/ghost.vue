@@ -1,17 +1,6 @@
 <template>
   <div class="ghost">
-    <img
-      src="../assets/ghost.png"
-      alt="ghost"
-      style="
-        width: 300px;
-        height: 300px;
-        bottom: 0;
-        position: absolute;
-        z-index: 12000;
-      "
-      id="idGhost"
-    />
+    <img src="../assets/ghost.png" alt="ghost" id="idGhost" />
   </div>
 </template>
 
@@ -26,4 +15,12 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.ghost img {
+  width: 300px;
+  height: 300px;
+  bottom: 0;
+  position: absolute;
+  z-index: 12000;
+}
+</style>

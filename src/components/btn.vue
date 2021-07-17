@@ -4,11 +4,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
 
-  <div
-    class="v-btn"
-    @click="click"
-    style="position: absolute; z-index: 12000; margin-left: 90vw"
-  >
+  <div class="btn" @click="click">
     <div class="switch">
       <label>
         Off
@@ -22,7 +18,7 @@
 
 <script>
 export default {
-  name: "v-btn",
+  name: "btn",
   data() {
     return {
       boolean: true,
@@ -36,4 +32,10 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.btn {
+  position: absolute;
+  z-index: 12000;
+  margin-left: 90vw;
+}
+</style>

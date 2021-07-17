@@ -1,20 +1,12 @@
 <template>
-  <img
-    @click="show = !show"
-    src="../assets/left_web.png"
-    style="width: 200px; height: 180px; position: absolute; z-index: 12000"
-  />
+  <img class="web" @click="show = !show" src="../assets/left_web.png" />
 
   <transition
     name="custom-classes-transition"
     enter-active-class="animated tada"
     leave-active-class="animated bounceOutRight"
   >
-    <img
-      src="../assets/spider.png"
-      style="width: 200px; height: 180px; position: absolute; z-index: 11000"
-      v-if="show"
-    />
+    <img class="spider" src="../assets/spider.png" v-if="show" />
   </transition>
 </template>
 
@@ -34,4 +26,17 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.web {
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  z-index: 12000;
+}
+.spider {
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  z-index: 11000;
+}
+</style>

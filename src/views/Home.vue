@@ -1,33 +1,24 @@
 <template>
-  <v-btn @click="clickBtn" />
+  <btn @click="clickBtn" />
   <transition name="fade">
     <div class="BG" v-if="showImage"></div>
   </transition>
 
-  <router-link :to="{ name: 'Osya' }">
-    <img
-      src="@/assets/Osya.png"
-      style="
-        width: 200px;
-        height: 180px;
-        margin-left: 10vw;
-        margin-top: 20vh;
-        position: absolute;
-      "
-    />
+  <router-link :to="{ name: 'Osya' }" class="bookcover">
+    <img src="@/assets/Osya.png" />
   </router-link>
   <spider />
   <ghost />
 </template>
 
 <script>
-import vBtn from "@/components/v-btn";
+import Btn from "@/components/btn";
 import spider from "@/components/spider";
 import ghost from "@/components/ghost";
 
 export default {
   name: "Home",
-  components: { vBtn, spider, ghost },
+  components: { Btn, spider, ghost },
   data() {
     return {
       showImage: false,
@@ -45,7 +36,7 @@ export default {
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.8s;
 }
 .fade-enter,
 .fade-leave-to {
@@ -60,5 +51,12 @@ export default {
   background-size: cover;
   position: absolute;
   z-index: 10000;
+}
+.bookcover img {
+  width: 200px;
+  height: 180px;
+  margin-left: 10vw;
+  margin-top: 20vh;
+  position: absolute;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="Header">
-    <img alt="Header" src="../assets/wood.jpg" />
+  <div class="header">
+    <img alt="header" src="../assets/wood.jpg" />
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
   box-sizing: border-box;
   margin: 0;
 }
-.Header img {
+.header img {
   height: 9vh;
   width: 100%;
 }

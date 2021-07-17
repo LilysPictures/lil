@@ -21,12 +21,6 @@ export default {
 </script>
 
 <style>
-*,
-:after,
-:before {
-  box-sizing: border-box;
-  margin: 0;
-}
 #app {
   font-family: "Frijole", cursive;
   position: relative;
